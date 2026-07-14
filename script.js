@@ -1,7 +1,5 @@
-const key = "51a8d8877b43a6d8db6775d2f3db00ee";
-
 function colocarDadosNaTela(dados) {
-
+   console.log(dados)
    document.querySelector(".cidade").innerHTML = "Tempo em " + dados.name
    document.querySelector(".temp").innerHTML = Math.floor(dados.main.temp) + "°C"
    document.querySelector(".texto-previsao").innerHTML = dados.weather[0].description
